@@ -57,7 +57,7 @@ const Login = () => {
 
                 else {
                     console.log("Not Found")
-                    alert("Please enter valid username and password")
+                    alert("please enter valid username and password")
                     // Handle the response from the API
                 }
 

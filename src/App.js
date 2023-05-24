@@ -1,7 +1,8 @@
 
+import './App.css';
 import Login from './Pages/login';
 import PaginationComp from './Pages/Pagniation';
-
+import { BrowserRouter } from 'react-router-dom';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 
 function App() {

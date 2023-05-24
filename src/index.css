@@ -39,19 +39,12 @@ a{
 .page-item a{
   text-decoration: none;
   padding: 13px;
-  background-color:  rgba(70, 48, 21, 0.824);
+  background-color: rgb(3, 78, 163);
   color: #fff;
 }
 .page-item .null{
-  background-color: rgba(158, 114, 63, 0.938);
-  color: #fff;
-}
-.page-link.active {
-  background-color: rgba(158, 114, 63, 0.938);
-  border-color: rgba(158, 114, 63, 0.938);
- outline: 0px;
- box-shadow: 0px;
-  color: #fff;
+  background-color: rgb(237, 237, 255);
+  color: rgb(9, 91, 162);
 }
 .pagination {
   align-items: center;
@@ -64,32 +57,12 @@ a{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   padding: 20px;
   margin-top: 30px;
-  background: rgb(255, 255, 255) ;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-  transform: translateY(0px);
+  background: rgb(255, 255, 255) !important;
 }
-.blog-card-bg:hover {
-  transform: translateY(-10px);
+.blog-card-bg:nth-child(odd) {
+  background-color: yellow;
 }
 
-.blog-card-bg::before{
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: rgba(255, 195, 122, 0.13);
-  bottom: -80px;
-  right: -50px;
-  transform: scale(1);
-  transition: all 0.5s ease-in-out;
-  
-}
-.blog-card-bg:hover::before {
-  transform: scale(2);
-}
 .blog-heading h2{
   font-size: 30px;
 text-align: center;
@@ -165,7 +138,6 @@ min-height:0px;
 }
 
 
-
 /* LOGIN PAGE */
 
 .login-main-bg {
@@ -201,12 +173,3 @@ min-height:0px;
 .user-section button{
   margin-top: 20px;
 }
-.user-section p{
-  margin-bottom: 5px;
-}
-
-@media screen and (max-width: 576px) {
-  .login-card {
-    width: auto;
-  }
-  }
