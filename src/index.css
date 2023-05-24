@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.page-item a{
+  text-decoration: none;
+  padding: 13px;
+  background-color:  rgba(70, 48, 21, 0.824);
+  color: #fff;
+}
+.page-item .null{
+  background-color: rgba(158, 114, 63, 0.938);
+  color: #fff;
+}
+.page-link.active {
+  background-color: rgba(158, 114, 63, 0.938);
+  border-color: rgba(158, 114, 63, 0.938);
+ outline: 0px;
+ box-shadow: 0px;
+  color: #fff;
+}
+.pagination {
+  align-items: center;
+}
+
+.main-pagenation-bg{
+  margin-top: 50px;
+}
+.blog-card-bg {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 20px;
+  margin-top: 30px;
+  background: rgb(255, 255, 255) ;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0px);
+}
+.blog-card-bg:hover {
+  transform: translateY(-10px);
+}
+
+.blog-card-bg::before{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 195, 122, 0.13);
+  bottom: -80px;
+  right: -50px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+  
+}
+.blog-card-bg:hover::before {
+  transform: scale(2);
+}
+.blog-heading h2{
+  font-size: 30px;
+text-align: center;
+}
+
+.blog-title {
+  min-height: 60px;
+}
+.main-blog-content {
+  min-height: 160px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.blog-heading h2{
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.main-user-id{
+  margin-bottom: 20px;
+}
+.main-user-id h5{
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+}
+.main-user-id h5:before{
+  bottom: -10px;
+  left: 0;
+  width: 50%;
+  position: absolute;
+  content: " ";
+  border-bottom: 4px solid #ffd3af;
+}
+.blog-title h6{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.main-blog-content p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+  .main-blog-content {
+    min-height: 180px;
+}
+}
+
+@media screen and (max-width: 992px) {
+  .main-blog-content {
+    min-height: 160px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .blog-title {
+   min-height:0px;
+}
+.main-blog-content  {
+min-height:0px;
+}
+}
+
+
+
+/* LOGIN PAGE */
+
+.login-main-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0,0,0,0.7233018207282913) 0%, rgba(0,0,0,0.6532738095238095) 100%),url(./images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.login-card {
+  width: 500px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.login-heading h5{
+  font-size: 30px;
+  font-weight: 600;
+}
+.login-heading p{
+  font-size: 17px;
+}
+
+.user-section {
+  margin-top: 10px;
+}
+.user-section button{
+  margin-top: 20px;
+}
+.user-section p{
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  .login-card {
+    width: auto;
+  }
+  }
